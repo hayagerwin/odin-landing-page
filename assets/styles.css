@@ -17,9 +17,8 @@ body {
 }
 
 /* Navigation */
-
 .navbar {
-  background: linear-gradient(135deg, #228b22 0%, #008000 100%);
+  background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
   color: white;
   padding: 1rem 0;
   position: fixed;
@@ -84,4 +83,74 @@ body {
 
 .nav a:hover::after {
   width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 70px;
+  background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,150 600,300 T1200,300 L1200,600 L0,600 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+  background-size: cover;
+}
+
+.hero .contents {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.8s ease;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #fbbf24;
+  color: #15803d;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(251, 191, 36, 0.4);
+  background: #f59e0b;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
