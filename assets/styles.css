@@ -284,3 +284,31 @@ body {
   color: #64748b;
   font-weight: 500;
 }
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+  color: white;
+  padding: 50px 0 20px;
+}
+
+.footer-info {
+  margin-bottom: 2rem;
+}
+
+.footer-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+}
