@@ -188,45 +188,99 @@ body {
 }
 
 /* Services Section */
-      .services {
-        padding: 80px 0;
-        background: white;
-      }
+.services {
+  padding: 80px 0;
+  background: white;
+}
 
-      .services h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        color: #15803d;
-        margin-bottom: 3rem;
-      }
+.services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #15803d;
+  margin-bottom: 3rem;
+}
 
-      .service-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-      }
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
 
-      .card {
-        background: white;
-        padding: 40px 30px;
-        border-radius: 15px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s, box-shadow 0.3s;
-        border-top: 4px solid #22c55e;
-      }
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 4px solid #22c55e;
+}
 
-      .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(34, 197, 94, 0.2);
-      }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(34, 197, 94, 0.2);
+}
 
-      .card h3 {
-        font-size: 1.5rem;
-        color: #15803d;
-        margin-bottom: 1rem;
-      }
+.card h3 {
+  font-size: 1.5rem;
+  color: #15803d;
+  margin-bottom: 1rem;
+}
 
-      .card p {
-        color: #64748b;
-        line-height: 1.7;
-      }
+.card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Officials Section */
+.officials {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.officials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #15803d;
+  margin-bottom: 3rem;
+}
+
+.officials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.official {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.official:hover {
+  transform: translateY(-5px);
+}
+
+.official img {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #22c55e;
+}
+
+.official h3 {
+  font-size: 1.3rem;
+  color: #15803d;
+  margin-bottom: 0.5rem;
+}
+
+.official p {
+  color: #64748b;
+  font-weight: 500;
+}
